@@ -1,0 +1,344 @@
+.NavHero {
+    color: white;
+    /* min-height: 1000px; */
+    background: no-repeat center/cover url("/public/images/Fondo-Definitivo.png");
+    background-attachment: fixed;
+}
+
+.Nav {
+    margin: auto;
+    padding: 25px 0;
+    width: 90%;
+    max-width: 940px;
+}
+
+.Hero {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.heroDuo {
+    margin: auto;
+    max-width: 850px;
+
+}
+
+.heroDuo img {
+    max-height: 140px;
+}
+
+.Nav img {
+    height: 25px;
+}
+
+/* --------------------- */
+
+
+
+.navbar {
+    justify-content: space-between;
+    min-width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.burguer {
+    display: none;
+}
+
+.NavHero h1 {
+    font-size: 105px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -1.8px;
+}
+
+.NavHero p {
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.JflexEnd {
+    justify-content: flex-end;
+}
+
+
+
+.hero3 {
+    max-width: 940px;
+    margin: auto;
+}
+
+.hero3 img {
+    margin-top: 50px;
+    max-height: 180px;
+}
+
+.actual-hero {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: -27vw;
+    transition: 0.5s;
+}
+
+
+
+.btn {
+    margin: auto;
+    border-radius: 30px;
+    width: 230px;
+    max-width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.55px;
+    padding: 15px 20px;
+    font-size: 14px;
+
+}
+
+/* .btnWhite {
+    background-color: white;
+    color: #5238b1;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+} */
+.fix {
+    position: relative;
+    display: flex;
+    height: 170px;
+}
+
+.unfix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.btnWhite {
+    position: absolute;
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    bottom: calc(100vh - 100px);
+    right: 50%;
+    transform: translate(50%);
+    font-weight: 700;
+    font-size: 0.688rem;
+    line-height: 18px;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: #5238b1;
+    cursor: pointer;
+    transition: all 0.5s ease-in
+}
+
+.btnWhite i {
+    font-size: 32px;
+}
+
+.btntransformed {
+    /* -webkit-animation: jello-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: jello-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; */
+    position: fixed;
+    bottom: 8rem;
+    right: 3rem;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background-color: #ef4b6c;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+.infootview {
+    bottom: -5rem !important;
+}
+
+.displaynoneall {
+    display: none;
+}
+
+
+.swal2-footer a {
+    background-color: #ef4b6c;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 230px;
+    max-width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.55px;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+.swal2-confirm {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.floatHover:hover {
+    -webkit-animation: float 3s ease-in-out infinite both;
+    animation: float 3s ease-in-out infinite both;
+}
+
+
+
+/* weird alternative to the animation */
+/* .btntransformed {
+    -webkit-animation: jello-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: jello-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    transition: 1s;
+    position: fixed;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    background-color: #ef4b6c;
+    color: white;
+    left: calc(100% - 94px);
+    transition: 1s linear;
+} */
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.6s ease-out both;
+    animation: slide-in-top 0.6s ease-out both;
+}
+
+
+@media (max-width:1200px) {
+    .NavHero h1 {
+        font-size: 10vw;
+        margin-top: 50px;
+        line-height: 1;
+    }
+
+}
+
+
+
+@media (max-width:850px) {
+
+    .burguer,
+    .navbar div {
+        display: inline;
+        z-index: 100;
+    }
+
+    .navbar {
+        opacity: 1;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        right: 0;
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        z-index: 10;
+        overflow: hidden;
+        transition: 0.5s ease-out;
+        background-color: #f7f7f7;
+        color: #525962;
+
+    }
+
+    .heroguy2 {
+        display: none;
+    }
+
+    .heroDuo img {
+        max-height: none;
+        margin: auto;
+        width: 80%;
+    }
+
+    .NavHero h1 {
+        font-size: 15vw;
+    }
+
+    .btntransformed {
+        bottom: 12rem;
+        right: 2.5rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .btnWhite i {
+        font-size: 24px;
+    }
+
+
+
+    .wobble-ver-right {
+        -webkit-animation: wobble-ver-right 0.8s both;
+        animation: wobble-ver-right 0.8s both;
+    }
+
+    .display {
+        opacity: 1;
+        -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    }
+
+    .navbar div {
+        margin: 30px auto;
+    }
+
+    .display div {
+        -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    .displaynone {
+        -webkit-animation: slide-out-blurred-top 0.7s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+        animation: slide-out-blurred-top 0.7s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+        opacity: 0;
+        z-index: -10;
+        /* last two lines fix the issue of the exit animation appearing on mobile */
+    }
+
+    .selected {
+        color: red;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    /* HHmmmm */
+    /* .NavHero{
+   
+    } */
+    .fix {
+        margin-bottom: 30px;
+    }
+
+    .displaynonemobile {
+        display: none;
+    }
+
+    .hero3 img {
+        max-height: 200px;
+        position: relative;
+        top: -50px;
+        left: -30px;
+    }
+
+}

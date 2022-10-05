@@ -1,0 +1,142 @@
+.content {}
+
+.redhr {
+    width: 40px;
+    max-width: 25%;
+    border: 1px solid #ef4b6c;
+    margin-bottom: 60px;
+}
+
+.iconsgrid {
+    margin-bottom: 15vw;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    width: 940px;
+    max-width: 80%;
+    gap: 50px 0;
+}
+
+.iconsgrid img {
+    width: 80px;
+}
+
+.iconsgrid h3 {
+    margin: 15px auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    font-weight: 600;
+}
+
+.iconsgrid p {
+    font-size: 15px;
+    line-height: 1.73;
+    letter-spacing: .5px;
+    color: #626881;
+    font-family: 'Lora', serif;
+    margin: 0 20px;
+}
+
+.clientsP {
+    font-weight: 400;
+    color: #32353b;
+    font-size: 22px;
+    line-height: 1.63;
+    letter-spacing: .5px;
+    max-width: 80%;
+}
+
+.clientsGrid {
+    width: 940px;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.clientsGrid div div {
+    margin-top: 30px;
+    background-color: white;
+    min-height: 100px;
+    /* -webkit-box-shadow: 0px 0px 400px 129px rgba(0, 0, 0, 0.02); */
+    box-shadow: 0px 10px 100px 59px rgba(212, 217, 232, .2);
+    padding: 30px 40px;
+    border-radius: 16px;
+    display: grid;
+    place-content: center;
+}
+
+.displaysmall {
+    display: none !important;
+}
+
+@media (max-width:1000px) {
+    .clientsGrid img {
+        min-width: 50px;
+    }
+
+    .clientsGrid div div {
+        padding: 30px 10px;
+    }
+
+}
+
+@media (max-width:850px) {
+    .iconsgrid p {
+        display: none;
+    }
+
+    .iconsgrid h3 {
+
+        font-size: 3.5vw;
+        color: #212529;
+        font-weight: 400;
+    }
+
+    .iconsgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .clientsGrid {
+        justify-content: center;
+    }
+
+    .dissmall {
+        display: none;
+    }
+
+    .displaysmall {
+        width: 100%;
+        display: grid !important;
+    }
+
+    .clientsGrid {
+        gap: 15px;
+        width: 80%;
+    }
+
+    .clientsGrid img {
+        width: 100px;
+    }
+
+    .clientsGrid div {
+        width: 100%
+    }
+
+    .clientsGrid div div {
+        margin: auto;
+        padding: 0 30px;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .client2 {
+        width: 85% !important;
+
+    }
+
+    .client1 {
+        width: 100% !important;
+
+    }
+
+}
