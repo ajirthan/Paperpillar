@@ -10,7 +10,7 @@
     "react-dom": "^19.1.0",
     "react-intersection-observer": "^9.16.0",
     "react-scripts": "5.0.1",
-    "sweetalert2": "^11.22.0",
+    "sweetalert2": "^11.22.2",
     "web-vitals": "^5.0.1"
   },
   "scripts": {
